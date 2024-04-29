@@ -9,6 +9,9 @@
   .myContainer {
     @apply w-[90%] mx-auto;
   }
+  .btn {
+    @apply text-[#777] rounded-full px-8 py-[10px] m-auto md:hover:scale-110;
+  }
   header {
     background: linear-gradient(
         to right bottom,
@@ -18,13 +21,22 @@
       url(../img/hero.jpg);
   }
   #features {
-   background: linear-gradient(
-       to right bottom,
-       rgba(126, 213, 111, 0.8),
-       rgba(40, 180, 133, 0.8)
-     ),
-     url(../img/nat-4.jpg);
- }
+    background: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.8),
+        rgba(40, 180, 133, 0.8)
+      ),
+      url(../img/nat-4.jpg);
+  }
+  .tours-card:nth-child(1) {
+    background: linear-gradient(to right bottom, #ffbb00, #ff7730),
+      url(../img/nat-5.jpg);
+    background-position: center;
+    background-blend-mode: screen;
+    background-size: cover;
+    /* 285,187,0 */
+  }
+
   .ls-lg {
     letter-spacing: 2.5rem;
   }

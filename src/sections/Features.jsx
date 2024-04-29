@@ -26,11 +26,11 @@ const Features = () => {
 
   return (
     <section id="features" className="py-20">
-      <div className="myContainer grid md:grid-cols-4 md:gap-12">
+      <div className="myContainer grid md:grid-cols-4 gap-8 md:gap-12">
         {cards.map(({ icon, h, p }) => (
           <Card
             key={h}
-            className="cursor-pointer text-[#777] text-center rounded p-4 bg-[rgba(255,255,255,0.8)] grid gap-4 hover:-translate-y-5  ">
+            className="cursor-pointer text-[#777] text-center rounded p-4 bg-[rgba(255,255,255,0.8)] grid gap-4 lg:hover:-translate-y-5  ">
             {icon}
             <p className="font-semibold text-lg">{h}</p>
             <p>{p}</p>

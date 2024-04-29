@@ -10,7 +10,7 @@ const Header = () => {
           <p className="font-bold md:font-medium pb-8 text-2xl md:text-[4rem] ls-md md:ls-lg">OUTDOORS</p>
           <p className="font-medium text-base ls-sm">IS WHERE LIFE HAPPENS</p>
         </div>
-        <button className="bg-white text-gray-500 rounded-full px-8 py-[10px] m-auto hover:scale-110">
+        <button className="bg-white btn">
           DISCOVER OUR TOURS
         </button>
       </div>
