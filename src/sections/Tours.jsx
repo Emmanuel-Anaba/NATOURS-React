@@ -47,15 +47,15 @@ const Tours = () => {
   ];
 
   return (
-    <section id="tours" className="py-20">
-      <p className="text-center font-semibold text-gradient text-xl md:text-2xl lg:text-3xl pb-8 ls-vsm">
+    <section id="tours" className="py-20 grid gap-16">
+      <p className="section-heading">
         MOST POPULAR TOURS
       </p>
       <div className="myContainer grid md:grid-cols-3 gap-12 md:gap-20 text-[#777]">
         {cards.map(({ h, p, price, bg, bgImg }) => (
           <Card
             key={h}
-            className={`text-center shadow-lg overflow-hidden rounded-lg md:hover:scale-105`}>
+            className={`text-center shadow-2xl overflow-hidden rounded-lg md:hover:scale-105`}>
             <div
               className="h-48 bg-center bg-cover bg-blend-screen text-white relative"
               style={{
@@ -87,6 +87,7 @@ const Tours = () => {
           </Card>
         ))}
       </div>
+      <a href="#" className="btn bg-[#55c57a] text-white shadow-lg">DISCOVER ALL TOURS</a>
     </section>
   );
 };

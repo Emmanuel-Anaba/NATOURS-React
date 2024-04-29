@@ -3,6 +3,7 @@ import Features from "./sections/Features";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
 import Nav from "./sections/Nav";
+import Stories from "./sections/Stories";
 import Tours from "./sections/Tours";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <About />
       <Features />
       <Tours />
+      <Stories />
       <Footer />
     </>
   );

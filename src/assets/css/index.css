@@ -4,13 +4,16 @@
 
 @layer utilities {
   * {
-    @apply duration-500;
+    @apply outline-none duration-500;
   }
   .myContainer {
     @apply w-[90%] mx-auto;
   }
   .btn {
-    @apply text-[#777] rounded-full px-8 py-[10px] m-auto md:hover:scale-110;
+    @apply rounded-full px-8 py-[10px] m-auto md:hover:scale-110 cursor-pointer;
+  }
+  .section-heading {
+    @apply text-center font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
   }
   header {
     background: linear-gradient(

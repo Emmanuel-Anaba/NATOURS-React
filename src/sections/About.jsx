@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-8 lg:py-20 bg-[#f7f7f7]">
-      <p className="text-center font-semibold text-gradient text-xl md:text-2xl lg:text-3xl pb-8 ls-vsm">
+      <p className="section-heading pb-8">
         EXCITING TOURS FOR ADVENTUROUS PEOPLE
       </p>
       <div className="myContainer grid md:grid-cols-5 gap-8">
@@ -48,7 +48,7 @@ const About = () => {
           {imgs.map((item) => (
             <img
               key={imgs.indexOf(item)}
-              className={`mx-auto w-full md:w-fit rounded-lg md:absolute lg:hover:scale-110 lg:outline-offset-8 shadow-2xl lg:hover:outline lg:hover:outline-4 hover:outline-[#55c57a] ${item.position}`}
+              className={`mx-auto w-full md:w-fit rounded-lg md:absolute lg:hover:scale-110 lg:outline-offset-8 shadow-2xl lg:hover:outline lg:hover:outline-4 md:hover:outline-[#55c57a] md:hover:z-50 ${item.position}`}
               src={item.image}
               alt={`Photo ${imgs.indexOf(item) + 1}`}
             />
