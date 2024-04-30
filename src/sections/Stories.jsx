@@ -38,7 +38,7 @@ const Stories = () => {
             className="bg-[rgba(255,255,255,0.6)] shadow-xl p-8 rounded-lg grid grid-flow-col gap-8 place-items-center md:w-5/6 lg:w-4/6 mx-auto">
             <div className="w-32 h-32 rounded-full grid place-items-center overflow-hidden cursor-pointer relative">
               <img
-                className="w-32 h-32 duration-700 scale-150 hover:scale-100 hover:blur-sm"
+                className="w-32 h-32 duration-700 scale-150 hover:scale-100 hover:blur-[2px]"
                 src={img}
                 alt={name}
               />

@@ -48,7 +48,7 @@ const About = () => {
           {imgs.map((item) => (
             <img
               key={imgs.indexOf(item)}
-              className={`mx-auto w-full md:w-fit rounded-lg md:absolute lg:hover:scale-110 lg:outline-offset-8 shadow-2xl lg:hover:outline lg:hover:outline-4 lg:hover:outline-[#55c57a] lg:hover:z-50 ${item.position}`}
+              className={`mx-auto w-full md:w-[300px] rounded-lg md:absolute lg:hover:scale-110 lg:outline-offset-8 shadow-2xl lg:hover:outline lg:hover:outline-4 lg:hover:outline-[#55c57a] lg:hover:z-50 ${item.position}`}
               src={item.image}
               alt={`Photo ${imgs.indexOf(item) + 1}`}
             />

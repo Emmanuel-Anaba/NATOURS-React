@@ -25,7 +25,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20">
+    <section id="features" className="py-20 bg-center bg-cover">
       <div className="myContainer grid md:grid-cols-4 gap-8 lg:gap-12">
         {cards.map(({ icon, h, p }) => (
           <Card

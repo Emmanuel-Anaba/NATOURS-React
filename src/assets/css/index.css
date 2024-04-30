@@ -4,7 +4,7 @@
 
 @layer utilities {
   * {
-    @apply outline-none duration-500;
+    @apply outline-none duration-500 cursor-default;
   }
   .myContainer {
     @apply w-[90%] mx-auto;
@@ -16,10 +16,14 @@
     @apply font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
   }
   .line-link {
-    @apply text-[#55c57a] border-b-[1px] border-[#55c57a];
+    @apply text-[#55c57a] border-b-[1px] border-[#55c57a] cursor-pointer;
   }
   input {
-    accent-color: rgba(40, 180, 133, 1);
+    @apply cursor-auto;
+    accent-color: #55c57a;
+  }
+  input:placeholder-shown + label {
+    @apply opacity-0;
   }
   .form-element {
     @apply block w-full p-2 rounded-md;
@@ -58,22 +62,13 @@
       url(../img/hero.jpg);
   }
   #features {
-    background: linear-gradient(
+    background-image: linear-gradient(
         to right bottom,
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
       url(../img/nat-4.jpg);
   }
-  .tours-card:nth-child(1) {
-    background: linear-gradient(to right bottom, #ffbb00, #ff7730),
-      url(../img/nat-5.jpg);
-    background-position: center;
-    background-blend-mode: screen;
-    background-size: cover;
-    /* 285,187,0 */
-  }
-
   .ls-lg {
     letter-spacing: 2.5rem;
   }
@@ -88,7 +83,15 @@
   }
   .text-gradient {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
-    background-clip: text;
-    color: transparent;
+    @apply bg-clip-text text-transparent;
+  }
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#55c57a];
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(85, 197, 122, 0.5);
   }
 }
