@@ -28,6 +28,7 @@
   .form-element {
     @apply block w-full p-2 rounded-md;
   }
+  nav,
   #book {
     background: linear-gradient(
       to right bottom,

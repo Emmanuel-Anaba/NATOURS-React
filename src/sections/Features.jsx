@@ -1,24 +1,26 @@
+import { IonIcon } from "@ionic/react";
+import { compassOutline, globeOutline, heartOutline, mapOutline } from "ionicons/icons";
 import Card from "../components/Card";
 
 const Features = () => {
   const cards = [
     {
-      icon: "", // I'll ion-icon or react-icon or any svg here
+      icon: globeOutline, // I'll ion-icon or react-icon or any svg here
       h: "EXPLORE THE WORLD",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
     {
-      icon: "",
+      icon: compassOutline,
       h: "MEET NATURE",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
     {
-      icon: "",
+      icon: mapOutline,
       h: "FIND YOUR WAY",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
     {
-      icon: "",
+      icon: heartOutline,
       h: "LIVE HEATHIER",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
@@ -31,7 +33,7 @@ const Features = () => {
           <Card
             key={h}
             className="cursor-pointer text-[#777] text-center rounded p-4 bg-[rgba(255,255,255,0.8)] grid gap-4 lg:hover:-translate-y-5">
-            <img className="mx-auto w-20 h-20" src={icon} />
+            <IonIcon className="w-16 h-16 mx-auto" icon={icon} />
             <p className="font-semibold text-lg">{h}</p>
             <p>{p}</p>
           </Card>

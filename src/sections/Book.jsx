@@ -13,7 +13,7 @@ const Book = () => {
   const radio = ["Small Tour Group", "Large Tour Group"];
 
   return (
-    <section id="book" className="py-20">
+    <section id="book" className="py-20 bg-gradient">
       <div className="myContainer lg:w-10/12 grid md:grid-cols-2 rounded-lg bg-center bg-cover overflow-hidden shadow-2xl bg-blend-screen">
         <form action="#" className="p-8 md:p-12 grid gap-12">
           <p className="section-heading text-left">START BOOKING NOW</p>
