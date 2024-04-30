@@ -82,12 +82,12 @@ const Tours = () => {
                 ONLY <br />
                 <span className="md:text-3xl lg:text-4xl font-medium">${price}</span>
               </p>
-              <button className="bg-white btn">BOOK NOW</button>
+              <button className="bg-white m-auto btn">BOOK NOW</button>
             </div>
           </Card>
         ))}
       </div>
-      <a href="#" className="btn bg-[#55c57a] text-white shadow-lg">DISCOVER ALL TOURS</a>
+      <a href="#" className="btn bg-[#55c57a] text-white m-auto shadow-lg">DISCOVER ALL TOURS</a>
     </section>
   );
 };

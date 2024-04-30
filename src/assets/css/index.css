@@ -10,7 +10,7 @@
     @apply w-[90%] mx-auto;
   }
   .btn {
-    @apply rounded-full px-8 py-[10px] m-auto md:hover:scale-110 cursor-pointer;
+    @apply rounded-full px-8 py-[10px] md:hover:scale-110 cursor-pointer;
   }
   .section-heading {
     @apply font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
