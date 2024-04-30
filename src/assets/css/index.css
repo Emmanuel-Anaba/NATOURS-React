@@ -15,6 +15,16 @@
   .section-heading {
     @apply text-center font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
   }
+  .line-link {
+    @apply text-[#55c57a] border-b-[1px] border-[#55c57a];
+  }
+  #book {
+    background: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 1),
+      rgba(40, 180, 133, 1)
+    );
+  }
   header {
     background: linear-gradient(
         to right bottom,

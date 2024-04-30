@@ -54,9 +54,7 @@ const About = () => {
             />
           ))}
         </div>
-        <a
-          className="text-[#55c57a] border-b-[1px] border-[#55c57a] mr-auto my-auto"
-          href="#">
+        <a className="line-link mr-auto my-auto" href="#">
           Learn More &rarr;
         </a>
       </div>

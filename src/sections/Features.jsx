@@ -3,7 +3,6 @@ import Card from "../components/Card";
 const Features = () => {
   const cards = [
     {
-      icon: "",
       h: "EXPLORE THE WORLD",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
@@ -31,7 +30,7 @@ const Features = () => {
           <Card
             key={h}
             className="cursor-pointer text-[#777] text-center rounded p-4 bg-[rgba(255,255,255,0.8)] grid gap-4 lg:hover:-translate-y-5">
-            {icon}
+            <img className="mx-auto w-20 h-20" src={icon} />
             <p className="font-semibold text-lg">{h}</p>
             <p>{p}</p>
           </Card>
