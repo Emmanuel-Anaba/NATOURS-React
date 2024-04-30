@@ -31,11 +31,11 @@ const Stories = () => {
         <source src={vid2} type="video/webm" />
       </video>
       <div className="myContainer grid gap-16 py-20">
-        <p className="section-heading">WE MAKE PEOPLE GENUINELY HAPPY</p>
+        <p className="section-heading text-center">WE MAKE PEOPLE GENUINELY HAPPY</p>
         {stories.map(({ h, p, img, name }) => (
           <Card
             key={h}
-            className="bg-[rgba(255,255,255,0.6)] shadow-xl p-8 rounded-lg grid grid-flow-col gap-8 place-items-center w-4/6 mx-auto">
+            className="bg-[rgba(255,255,255,0.6)] shadow-xl p-8 rounded-lg grid grid-flow-col gap-8 place-items-center md:w-5/6 lg:w-4/6 mx-auto">
             <div className="w-32 h-32 rounded-full grid place-items-center overflow-hidden cursor-pointer relative">
               <img
                 className="w-32 h-32 duration-700 scale-150 hover:scale-100 hover:blur-sm"

@@ -3,6 +3,7 @@ import Card from "../components/Card";
 const Features = () => {
   const cards = [
     {
+      icon: "", // I'll ion-icon or react-icon or any svg here
       h: "EXPLORE THE WORLD",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },
@@ -25,7 +26,7 @@ const Features = () => {
 
   return (
     <section id="features" className="py-20">
-      <div className="myContainer grid md:grid-cols-4 gap-8 md:gap-12">
+      <div className="myContainer grid md:grid-cols-4 gap-8 lg:gap-12">
         {cards.map(({ icon, h, p }) => (
           <Card
             key={h}

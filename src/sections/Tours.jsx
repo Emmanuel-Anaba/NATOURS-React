@@ -47,22 +47,22 @@ const Tours = () => {
   ];
 
   return (
-    <section id="tours" className="py-20 grid gap-16">
-      <p className="section-heading">
+    <section id="tours" className="py-12 md:py-20 grid gap-16">
+      <p className="section-heading text-center">
         MOST POPULAR TOURS
       </p>
-      <div className="myContainer grid md:grid-cols-3 gap-12 md:gap-20 text-[#777]">
+      <div className="myContainer grid md:grid-cols-3 gap-8 lg:gap-16 text-[#777]">
         {cards.map(({ h, p, price, bg, bgImg }) => (
           <Card
             key={h}
-            className={`text-center shadow-2xl overflow-hidden rounded-lg md:hover:scale-105`}>
+            className={`text-center shadow-2xl overflow-hidden rounded-lg md:hover:scale-105 my-auto`}>
             <div
               className="h-48 bg-center bg-cover bg-blend-screen text-white relative"
               style={{
                 backgroundImage: `${bg}, url(${bgImg})`,
               }}>
               <p
-                className="text-2xl p-2 absolute bottom-0 right-0 rounded-tl-lg"
+                className="lg:text-2xl p-2 absolute bottom-0 right-0 rounded-tl-lg"
                 style={{
                   backgroundImage: bg,
                 }}>
@@ -80,7 +80,7 @@ const Tours = () => {
             <div className="py-8 grid gap-4" style={{ background: bg }}>
               <p className="text-white">
                 ONLY <br />
-                <span className="text-4xl font-medium">${price}</span>
+                <span className="md:text-3xl lg:text-4xl font-medium">${price}</span>
               </p>
               <button className="bg-white btn">BOOK NOW</button>
             </div>

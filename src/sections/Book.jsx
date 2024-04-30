@@ -1,9 +1,39 @@
 const Book = () => {
+  const formFields = [
+    {
+      label: "Full Name",
+      type: "text",
+    },
+    {
+      label: "Email Address",
+      type: "email",
+    },
+  ];
+
+  const radio = ["Small Tour Group", "Large Tour Group"];
+
   return (
     <section id="book" className="py-20">
-      <div className="myContainer bg-white grid md:grid-cols-2">
-        <form className="">
-          <p className="section-heading">START BOOKING</p>
+      <div
+        className="myContainer lg:w-9/12 grid md:grid-cols-2 rounded-lg bg-center bg-cover overflow-hidden shadow-2xl bg-blend-screen">
+        <form action="#" className="p-8 md:p-12 grid gap-12">
+          <p className="section-heading text-left">START BOOKING NOW</p>
+          {formFields.map(({ label, type }) => (
+            <input
+              key={label}
+              placeholder={label}
+              name={label.replaceAll(" ", "")}
+              id={label.replaceAll(" ", "")}
+              className="form-element"
+              type={type}
+            />
+          ))}
+          {radio.map((item) => (
+            <div key={item} className="flex gap-4">
+              <input type="radio" id={item.replaceAll(" ", "")} name="group" />
+              <label>{item}</label>
+            </div>
+          ))}
         </form>
       </div>
     </section>

@@ -13,10 +13,16 @@
     @apply rounded-full px-8 py-[10px] m-auto md:hover:scale-110 cursor-pointer;
   }
   .section-heading {
-    @apply text-center font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
+    @apply font-semibold text-gradient text-xl md:text-2xl lg:text-3xl ls-vsm;
   }
   .line-link {
     @apply text-[#55c57a] border-b-[1px] border-[#55c57a];
+  }
+  input {
+    accent-color: rgba(40, 180, 133, 1);
+  }
+  .form-element {
+    @apply block w-full p-2 rounded-md;
   }
   #book {
     background: linear-gradient(
@@ -24,6 +30,24 @@
       rgba(126, 213, 111, 1),
       rgba(40, 180, 133, 1)
     );
+  }
+  #book .myContainer {
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.9) 55%,
+        transparent 55%
+      ),
+      url(../img/nat-10.jpg);
+  }
+  @media screen and (max-width: 640px) {
+    #book .myContainer {
+      background-image: linear-gradient(
+          rgba(255, 255, 255, 0.9),
+          rgba(255, 255, 255, 0.9)
+        ),
+        url(../img/nat-10.jpg);
+    }
   }
   header {
     background: linear-gradient(
