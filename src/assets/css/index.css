@@ -18,6 +18,22 @@
   .line-link {
     @apply text-[#55c57a] border-b-[1px] border-[#55c57a] cursor-pointer;
   }
+  .circle {
+    @apply rounded-full w-24 h-24 overflow-hidden float-left mr-4 relative;
+    shape-outside: circle(50%);
+  }
+  .circle > img {
+    @apply scale-125 duration-700;
+  }
+  .circle:hover > img {
+    @apply scale-100;
+  }
+  .circle > p {
+    @apply absolute left-1/2 -translate-x-1/2 translate-y-[100%] opacity-0 duration-1000;
+  }
+  .circle:hover > img {
+    @apply top-1/2 -translate-y-1/2 opacity-100;
+  }
   input {
     @apply cursor-auto;
     accent-color: #55c57a;
