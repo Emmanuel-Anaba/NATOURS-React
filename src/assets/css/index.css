@@ -31,7 +31,7 @@
   .circle > p {
     @apply absolute left-1/2 -translate-x-1/2 translate-y-[100%] opacity-0 duration-1000;
   }
-  .circle:hover > img {
+  .circle:hover > p {
     @apply top-1/2 -translate-y-1/2 opacity-100;
   }
   input {
