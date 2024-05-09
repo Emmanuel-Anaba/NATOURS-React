@@ -1,4 +1,4 @@
-import Logo from "../assets/img/logo-green.png";
+import Logo from "../assets/img/logo-green.webp";
 
 const Footer = () => {
   const links = ["COMPANY", "CONTACT US", "CAREERS", "PRIVACY POLICY", "TERMS"];

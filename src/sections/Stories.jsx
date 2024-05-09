@@ -1,6 +1,6 @@
 import Card from "../components/Card";
-import img1 from "../assets/img/nat-8.jpg";
-import img2 from "../assets/img/nat-9.jpg";
+import img1 from "../assets/img/nat-8.webp";
+import img2 from "../assets/img/nat-9.webp";
 import vid1 from "../assets/img/video.mp4";
 import vid2 from "../assets/img/video.webm";
 

@@ -59,7 +59,7 @@
         rgba(255, 255, 255, 0.9) 55%,
         transparent 55%
       ),
-      url(../img/nat-10.jpg);
+      url(../img/nat-10.webp);
   }
   @media screen and (max-width: 640px) {
     #book .myContainer {
@@ -67,7 +67,7 @@
           rgba(255, 255, 255, 0.9),
           rgba(255, 255, 255, 0.9)
         ),
-        url(../img/nat-10.jpg);
+        url(../img/nat-10.webp);
     }
   }
   header {
@@ -76,7 +76,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
-      url(../img/hero.jpg);
+      url(../img/hero.webp);
   }
   #features {
     background-image: linear-gradient(
@@ -84,7 +84,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
-      url(../img/nat-4.jpg);
+      url(../img/nat-4.webp);
   }
   .ls-lg {
     letter-spacing: 2.5rem;

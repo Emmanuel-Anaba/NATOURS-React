@@ -1,11 +1,16 @@
 import { IonIcon } from "@ionic/react";
-import { compassOutline, globeOutline, heartOutline, mapOutline } from "ionicons/icons";
+import {
+  compassOutline,
+  globeOutline,
+  heartOutline,
+  mapOutline,
+} from "ionicons/icons";
 import Card from "../components/Card";
 
 const Features = () => {
   const cards = [
     {
-      icon: globeOutline, // I'll ion-icon or react-icon or any svg here
+      icon: globeOutline,
       h: "EXPLORE THE WORLD",
       p: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.",
     },

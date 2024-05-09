@@ -1,6 +1,6 @@
-import img1 from "../assets/img/nat-1.jpg";
-import img2 from "../assets/img/nat-2.jpg";
-import img3 from "../assets/img/nat-3.jpg";
+import img1 from "../assets/img/nat-1.webp";
+import img2 from "../assets/img/nat-2.webp";
+import img3 from "../assets/img/nat-3.webp";
 
 const About = () => {
   const imgs = [
@@ -58,7 +58,6 @@ const About = () => {
           Learn More &rarr;
         </a>
       </div>
-      {/* Background Clip  */}
     </section>
   );
 };

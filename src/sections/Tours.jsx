@@ -1,7 +1,7 @@
 import Card from "../components/Card";
-import img1 from "../assets/img/nat-5.jpg";
-import img2 from "../assets/img/nat-6.jpg";
-import img3 from "../assets/img/nat-7.jpg";
+import img1 from "../assets/img/nat-5.webp";
+import img2 from "../assets/img/nat-6.webp";
+import img3 from "../assets/img/nat-7.webp";
 
 const Tours = () => {
   const cards = [
@@ -69,7 +69,6 @@ const Tours = () => {
                 {h}
               </p>
             </div>
-            {/* How do I do the lines here */}
             <ul className="w-[60%] mx-auto py-8">
               {p.map((item) => (
                 <li key={item} className="border-b-[1px] p-2">

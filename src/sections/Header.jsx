@@ -1,8 +1,4 @@
 const Header = () => {
-  //   <style>
-  //
-  //   </style>
-
   return (
     <header className="h-[85svh] bg-cover bg-top relative">
       <div className="grid gap-8 absolute left-1/2 -translate-x-1/2 top-[40%] -translate-y-[60%]">
@@ -14,7 +10,6 @@ const Header = () => {
           DISCOVER OUR TOURS
         </a>
       </div>
-      {/* Backgroung Clip is gonna be wavy */}
     </header>
   );
 };
