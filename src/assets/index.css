@@ -79,8 +79,7 @@
     letter-spacing: 0.2rem;
   }
   .text-gradient {
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    @apply bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#7ed56f] to-[#28b485];
   }
   input[type="text"],
   input[type="email"] {
