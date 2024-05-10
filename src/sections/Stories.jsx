@@ -37,8 +37,8 @@ const Stories = () => {
         {stories.map(({ h, p, img, name }) => (
           <Card
             key={h}
-            className="bg-[rgba(255,255,255,0.6)] shadow-xl p-8 rounded-lg md:w-5/6 lg:w-4/6 mx-auto">
-            <div className="circle grid place-items-center">
+            className="bg-[rgba(255,255,255,0.6)] shadow-xl p-8 rounded-lg md:w-5/6 lg:w-4/6 mx-auto group">
+            <div className="circle">
               <img src={img} alt={name} />
               <p>{name}</p>
             </div>

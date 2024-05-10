@@ -22,25 +22,15 @@
     @apply rounded-full w-24 h-24 overflow-hidden float-left mr-4 relative;
     shape-outside: circle(50%);
   }
-  .circle > img {
-    @apply h-full scale-125 duration-700;
+  .circle img {
+    @apply h-full scale-125 duration-700 group-hover:scale-100 group-hover:blur-[2px];
   }
-  /* .circle:hover > img {
-    @apply scale-100 blur-[2px];
-  } */
-  .circle > p {
-    @apply text-white text-sm text-center font-medium absolute left-1/2 -translate-x-1/2 translate-y-[100%] opacity-0 duration-1000;
-  }
-  .circle:hover > p {
-    @apply top-1/2 -translate-y-1/2 opacity-100;
+  .circle p {
+    @apply text-white text-sm text-center font-medium absolute left-1/2 -translate-x-1/2 translate-y-[100%] opacity-0 duration-1000 group-hover:top-1/2 group-hover:-translate-y-1/2 group-hover:opacity-100;
   }
   nav,
   #book {
-    background: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 1),
-      rgba(40, 180, 133, 1)
-    );
+    @apply bg-gradient-to-br from-[rgba(126,213,111,1)] to-[rgba(40,180,133,1)];
   }
   #book .myContainer {
     background-image: linear-gradient(
@@ -113,6 +103,6 @@
     @apply bg-[#55c57a];
   }
   ::-webkit-scrollbar-track {
-    background: rgba(85, 197, 122, 0.5);
+    @apply bg-[rgba(85,197,122,0.5)];
   }
 }

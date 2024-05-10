@@ -1,3 +1,2 @@
 I need a smaller video file
-How to use the group-hover: 
 And then add a README.md file
