@@ -25,24 +25,14 @@
   .circle > img {
     @apply h-full scale-125 duration-700;
   }
-  .circle:hover > img {
+  /* .circle:hover > img {
     @apply scale-100 blur-[2px];
-  }
+  } */
   .circle > p {
     @apply text-white text-sm text-center font-medium absolute left-1/2 -translate-x-1/2 translate-y-[100%] opacity-0 duration-1000;
   }
   .circle:hover > p {
     @apply top-1/2 -translate-y-1/2 opacity-100;
-  }
-  input {
-    @apply cursor-auto;
-    accent-color: #55c57a;
-  }
-  input:placeholder-shown + label {
-    @apply opacity-0;
-  }
-  .form-element {
-    @apply block w-full p-2 rounded-md;
   }
   nav,
   #book {
@@ -59,7 +49,7 @@
         rgba(255, 255, 255, 0.9) 55%,
         transparent 55%
       ),
-      url(../img/nat-10.webp);
+      url(./img/nat-10.webp);
   }
   @media screen and (max-width: 640px) {
     #book .myContainer {
@@ -67,7 +57,7 @@
           rgba(255, 255, 255, 0.9),
           rgba(255, 255, 255, 0.9)
         ),
-        url(../img/nat-10.webp);
+        url(./img/nat-10.webp);
     }
   }
   header {
@@ -76,7 +66,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
-      url(../img/hero.webp);
+      url(./img/hero.webp);
   }
   #features {
     background-image: linear-gradient(
@@ -84,7 +74,7 @@
         rgba(126, 213, 111, 0.8),
         rgba(40, 180, 133, 0.8)
       ),
-      url(../img/nat-4.webp);
+      url(./img/nat-4.webp);
   }
   .ls-lg {
     letter-spacing: 2.5rem;
@@ -95,12 +85,26 @@
   .ls-sm {
     letter-spacing: 1.2rem;
   }
-  .ls-xs{
+  .ls-xs {
     letter-spacing: 0.2rem;
   }
   .text-gradient {
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     @apply bg-clip-text text-transparent;
+  }
+  input[type="text"],
+  input[type="email"] {
+    @apply cursor-auto block w-full p-2 rounded-md focus:shadow-lg;
+    accent-color: #55c57a;
+  }
+  input[type="radio"] {
+    @apply mr-4;
+  }
+  .input-error {
+    @apply border-b-2 border-red-500;
+  }
+  .error {
+    @apply text-xs ml-2;
   }
   ::-webkit-scrollbar {
     @apply w-2;

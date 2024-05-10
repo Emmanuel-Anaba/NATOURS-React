@@ -18,7 +18,7 @@ const Nav = () => {
       className={`shadow-md w-full sticky top-0 text-white h-[60px] grid place-items-center z-20 md:border-none border-white transition-all duration-500 ${
         open ? "border-b-[1px]" : "border-b-0"
       }`}>
-      <div className="flex items-center justify-between md:myContainer w-full relative px-3 md:p-0">
+      <div className="flex items-center justify-between md:myContainer w-full px-3 md:p-0">
         <img src={Logo} alt="logo" className="h-8" />
         <div className="flex items-center gap-6">
           <div
@@ -28,7 +28,7 @@ const Nav = () => {
           </div>
           <ul
             className={`md:flex md:items-center md:pb-0 md:static md:z-auto absolute z-[-1] left-0 w-full md:w-auto p-3 md:p-0 grid gap-4 transition-all duration-500 ease-in-out ${
-              open ? "top-[50px] bg-[#55c57a] shadow-2xl" : "top-[-490px]"
+              open ? "top-[60px] bg-[#55c57a] shadow-2xl" : "top-[-490px]"
             }`}>
             {navLinks.map(({ link, name }) => (
               <li key={name} onClick={() => setOpen(false)}>

@@ -1,4 +1,3 @@
 I need a smaller video file
-How to use the group-hover:
-I will useFormik to handle the form in the book section
+How to use the group-hover: 
 And then add a README.md file
